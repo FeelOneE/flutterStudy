@@ -68,7 +68,7 @@ class App extends StatelessWidget {
                               textColor: Colors.black),
                           Button(
                               text: 'Request',
-                              bgColor: Color(0xFF1F2123),
+                              bgColor: const Color(0xFF1F2123),
                               textColor: Colors.white.withOpacity(0.8)),
                         ],
                       ),
@@ -102,21 +102,24 @@ class App extends StatelessWidget {
                           code: "EUR",
                           amount: "6 428",
                           icon: Icons.euro_rounded,
-                          isInverted: true
+                          isInverted: true,
+                          order: 1,
                       ),
                       const CurrencyCard(
                           name: "Bitcoin",
                           code: "BTC",
                           amount: "932",
                           icon: Icons.currency_bitcoin,
-                          isInverted: false
+                          isInverted: false,
+                          order: 2,
                       ),
                       const CurrencyCard(
                           name: "Dollar",
                           code: "USD",
                           amount: "91 723",
                           icon: Icons.money_rounded,
-                          isInverted: true
+                          isInverted: true,
+                          order: 3,
                       )
                     ],
                   )),
